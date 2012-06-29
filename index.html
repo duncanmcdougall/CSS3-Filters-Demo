@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/application.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/application.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="/">
+                  CSS3 Filters Demo
+            </a>
+            <ul class="nav">
+              <li><a href="http://net.tutsplus.com/tutorials/html-css-techniques/say-hello-to-css3-filters/">About</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="span3">
+                <div class="thumbnail">
+                    <img src="image.jpg" alt="" class="original">
+                    <h3>Original</h3>
+                </div>
+            </div>
+            <div class="span8 fullView hueRotateFull">
+                <div class="thumbnail">
+                    <img src="image.jpg" alt="">
+                    <h3>-webkit-filter: hue-rotate(<span>0</span>deg);</h3>
+                    <input type="range"  min="0" value="0" max="360" id="hueRotateRange" />
+                </div>
+            </div>
+            <div class="span8 fullView grayscaleFull">
+                <div class="thumbnail">
+                    <img src="image.jpg" alt="grayscale">
+                    <h3>-webkit-filter: grayscale(<span>0</span>%);</h3>
+                    <input type="range"  min="0" value="0" max="100" id="grayscaleRange" />
+                </div>
+            </div>
+            <div class="span8 fullView sepiaFull">
+                <div class="thumbnail">
+                    <img src="image.jpg" alt="grayscale">
+                    <h3>-webkit-filter: sepia(<span>0</span>%);</h3>
+                    <input type="range"  min="0" value="0" max="100" id="sepiaRange" />
+                </div>
+            </div>
+            <div class="span8 fullView blurFull">
+                <div class="thumbnail">
+                    <img src="image.jpg" alt="blur">
+                    <h3>-webkit-filter: blur(<span>0</span>px);</h3>
+                    <input type="range"  min="0" value="0" max="20" id="blurRange" />
+                </div>
+            </div>
+            <div class="span8 fullView brightnessFull">
+                <div class="thumbnail">
+                    <img src="image.jpg" alt="blur">
+                    <h3>-webkit-filter: brightness(<span>0</span>%);</h3>
+                    <input type="range"  min="-100" value="0" max="100" id="brightnessRange" />
+                </div>
+            </div>
+            <div class="span8 fullView contrastFull">
+                <div class="thumbnail">
+                    <img src="image.jpg" alt="blur">
+                    <h3>-webkit-filter: contrast(<span>100</span>%);</h3>
+                    <input type="range"  min="0" value="100" max="200" id="contrastRange" />
+                </div>
+            </div>
+            <div class="span8 fullView invertFull">
+                <div class="thumbnail">
+                    <img src="image.jpg" alt="blur">
+                    <h3>-webkit-filter: invert(<span>0</span>%);</h3>
+                    <input type="range"  min="0" value="0" max="100" step="100" id="invertRange" />
+                </div>
+            </div>
+            <div class="span8 fullView saturateFull">
+                <div class="thumbnail">
+                    <img src="image.jpg" alt="blur">
+                    <h3>-webkit-filter: saturate(<span>0</span>%);</h3>
+                    <input type="range"  min="0" value="100" max="1000" id="saturateRange" />
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="row-fluid">
+            <ul class="thumbnails span12">
+                <li class="span2">
+                    <span class="thumbnail">
+                        <a href="#" data-fullview=".hueRotateFull"><img src="image.jpg" alt="" class="hueRotate"></a>
+                        <h3>Hue Rotate</h3>
+                    </span>
+                </li>
+                <li class="span2">
+                    <span class="thumbnail">
+                        <a href="#" data-fullview=".grayscaleFull"><img src="image.jpg" alt="" class="grayscale"></a>
+                        <h3>Grayscale</h3>
+                    </span>
+                </li>
+                <li class="span2">
+                    <span class="thumbnail">
+                        <a href="#" data-fullview=".sepiaFull"><img src="image.jpg" alt="" class="sepia"></a>
+                        <h3>Sepia</h3>
+                    </span>
+                </li>
+                <li class="span2">
+                    <span class="thumbnail">
+                        <a href="#" data-fullview=".blurFull"><img src="image.jpg" alt="" class="blur"></a>
+                        <h3>Blur</h3>
+                    </span>
+                </li>
+                <li class="span2">
+                    <span class="thumbnail">
+                        <a href="#" data-fullview=".brightnessFull"><img src="image.jpg" alt="" class="brightness"></a>
+                        <h3>Brightness</h3>
+                    </span>
+                </li>
+                <li class="span2">
+                    <span class="thumbnail">
+                        <a href="#" data-fullview=".contrastFull"><img src="image.jpg" alt="" class="contrast"></a>
+                        <h3>Contrast</h3>
+                    </span>
+                </li>
+                <li class="span2">
+                    <span class="thumbnail">
+                        <a href="#" data-fullview=".invertFull"><img src="image.jpg" alt="" class="invert"></a>
+                        <h3>Invert</h3>
+                    </span>
+                </li>
+                <li class="span2">
+                    <span class="thumbnail">
+                        <a href="#" data-fullview=".saturateFull"><img src="image.jpg" alt="" class="saturate"></a>
+                        <h3>Saturate</h3>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <footer class="footer">
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>By <a href="http://www.twitter.com/duncanmcdougall">Duncan McDougall</a></p>
+    </footer>
+    </div>
+</body>
+</html>

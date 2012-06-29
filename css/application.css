@@ -1,0 +1,72 @@
+body
+{
+    padding-top:60px;
+}
+img
+{
+    max-width:100%;   
+}
+.fullView
+{
+    display:none;   
+}
+.hueRotateFull
+{
+    display:block;   
+}
+.row
+{
+    margin-bottom:20px;   
+}
+.thumbnail
+{
+    text-align:center;
+}
+.thumbnail h3
+{
+    text-align:center;
+    padding:10px 0;
+}
+input[type="range"]
+{
+    width:80%;
+}
+.hueRotate
+{
+    -webkit-filter: hue-rotate(180deg);   
+}
+.grayscale
+{
+    -webkit-filter: grayscale(100%);
+}
+.grayscale50
+{
+    -webkit-filter: grayscale(50%);
+}
+.sepia
+{
+    -webkit-filter: sepia(100%);
+}
+.blur
+{
+    -webkit-filter: blur(3px);
+}
+.brightness
+{
+    -webkit-filter: brightness(-50%);
+}
+
+.contrast
+{
+    -webkit-filter: contrast(50%);
+}
+
+.invert
+{
+    -webkit-filter: invert(100%);
+}
+
+.saturate
+{
+    -webkit-filter: saturate(400%);
+}
